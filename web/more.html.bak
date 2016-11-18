@@ -1,0 +1,63 @@
+<html>
+<head>
+<script language="javascript">
+</script>
+</head>
+<body text="white">
+
+<table border="0" cellspacing="0" cellpadding="0" height="10">
+<tr height="10">
+<td><img src="s.gif" width=300 height=135></td>
+<td background="a.GIF" width=700 ><img src="a.GIF" height="10"><font style="monotypecosiva" face="bold" size="8" color="green"></font></img></td>
+</tr>
+</table>
+
+<div align="right">
+<table  cellspacing=0 cellpadding=0 border=0>
+<tr><td>
+</td>
+<td align="right"><a href="home.html"><img src="homepage.gif"  border="0" ></a><a href="more.html">More</a></td>
+</tr>
+</table>
+</div>
+
+
+<center><table cellspacing=0 cellpadding=0 border="0" width="600" align="center" cellspacing="2">
+
+<tr><td><img src="pencil1.jpg" width="80" height="80"></img></td>
+<td align="justify" width="400"><img src="pen pencils.jpg" width="90"></img></td>
+<td><img src="paperweight.jpg"></img></td>
+<td><img src="paperweight18.jpg"></img></td></tr>
+<tr bgcolor="pink"><td>Araldite</td><td>Envelopes</td><td>Calculator</td><td>Calligraphed</td></tr>
+<tr><td><img src="paperweight17.jpg"></img></td>
+<td align="justify"><img src="paperweight16.jpg"></img> </td>
+<td><img src="paperweight15.jpg" width="90"></img></td>
+<td><img src="paperweight1.jpg" width="100"></img></td></tr>
+<tr bgcolor="pink"><td>CDlarge</td><td>Chalk</td><td>Files</td><td>Glue</td></tr>
+<tr><td><img src="paperweight9.jpg"></img></td>
+<td align="justify"><img src="paper clips.jpg"></img> </td>
+<td><img src="p19.JPG" width="90"></img></td>
+<td><img src="notepads.jpg" width="100"></img></td></tr>
+<tr bgcolor="pink"><td>CDlarge</td><td>Chalk</td><td>Files</td><td>Glue</td></tr>
+<tr><td><img src="notepad.jpg"></img></td>
+<td align="justify"><img src="markers5.jpg"></img> </td>
+<td><img src="map.jpg" width="90"></img></td>
+<td><img src="lumo.jpg" width="100"></img></td></tr>
+<tr bgcolor="pink"><td>CDlarge</td><td>Chalk</td><td>Files</td><td>Glue</td></tr>
+<tr><td><img src="map1.GIF"></img></td>
+<td align="justify"><img src="liquidpaper5.jpg"></img> </td>
+<td><img src="liquidpaper5.jpg" width="90"></img></td>
+<td><img src="letterheadpapers7.jpg" width="100"></img></td></tr>
+<tr bgcolor="pink"><td>CDlarge</td><td>Chalk</td><td>Files</td><td>Glue</td></tr>
+</table></center>
+
+
+
+ 
+
+
+
+
+</body>
+</script>
+</html>

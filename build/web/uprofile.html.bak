@@ -1,0 +1,143 @@
+<html>
+<head>
+<script language="javascript">
+</script>
+</head>
+<body text="white">
+<center><font color="blue" style="monotypecosiva" size="5">Customer Details Form</font></center><br/><br/>
+<form name="f1" action="./check" method="post">
+<table align=CENTER>
+<tr>
+<td bgcolor="#7B7CB6"><b>CUSTOMER ID</b>
+ <td><input type="textbox" maxlength="10" name="user_id"><font color="black">(max.of 10 characters)</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>CUSTOMER NAME</b> 
+ <td><input type="textbox" maxlength="10" name="name"><font color="black">(max.of 10 characters)</td>
+</tr>
+
+<tr>
+<td bgcolor="#7B7CB6">
+<b>COMPANY</b></td>
+<td> 
+<input type="text" maxlength="6" name="password"><font color="black">(max.of 6 characters)</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6">
+<b>MOBILE NUMBER</b></td>
+<td> 
+<input type="password" maxlength="6" name="t2"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7B7CB6"><b>ADDRESS</b>
+ <td>
+<TEXTAREA name="add1"> </TEXTAREA>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#7B7CB6"><b>CITY</b></td>
+<td><select name="city"  id="loc">  
+<option value="1">Agra</option>
+<option value="2">Ahmedabad </option>
+<option value="3">Allahabad</option>
+<option value="4">Amritsar</option>
+<option value="5">Banglore</option>
+<option value="6">Bhopal</option>
+<option value="7">Chandigarh</option>
+<option value="8">Chennai</option>
+<option value="9">Cochin</option>
+<option value="10">Coimbatore</option>
+<option value="11">Dehradoon</option>
+<option value="12">Gandhinagar</option>
+<option value="13" selected>Hyderabad</option>
+<option value="14">Indore</option>
+
+<option value="15">Jammu</option>
+<option value="16">Jaipur</option>
+<option value="17">Jodhpur</option>
+<option value="18">Kanchipuram</option>
+<option value="19">Kashmir</option>
+<option value="20">Lucknow</option>
+<option value="21">Madurai</option>
+
+<option value="22">Mumbai</option>
+<option value="23">Mysore</option>
+
+<option value="24">Ooty</option>
+<option value="25">Pune</option>
+<option value="26">Pondicherry</option>
+
+<option value="27">Srinagar</option>
+<option value="28">Trivandrum</option>
+<option value="29">Tirupati</option>
+<option value="30">Varanasi</option>
+<option value="31">Vijayawada</option>
+<option value="32">Vishakapatnam</option>
+<option value="33">Warangal</option>
+</select>
+</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>STATE</b></td>
+<td><select name="state" onchange="javascript:reloadTos(reloadTimeZones)" id="loc">  
+<option value="1">Andhra Pradesh </option>
+<option value="2">Arunachal Pradesh</option>
+<option value="3">Assam</option>
+<option value="4">Bihar</option>
+<option value="5">Chattisgarh</option>
+<option value="6">Delhi</option>
+<option value="7">Goa</option>
+<option value="8">Gujarat</option>
+<option value="9">Haryana</option>
+<option value="10">Himachal Pradesh</option>
+<option value="11">Jammu & Kashmir</option>
+<option value="12">Jharkhand</option>
+<option value="13">Karnataka</option>
+<option value="k2">Kerala</option>
+<option value="14">Madhya Pradesh</option>
+<option value="15">Maharashtra</option>
+<option value="16">Manipur</option>
+<option value="17">Meghalaya</option>
+<option value="18">Mizoram</option>
+<option value="19">Nagaland</option>
+<option value="20">Orissa</option>
+<option value="21">Punjab</option>
+<option value="22">Rajasthan</option>
+<option value="23">Sikkim</option>
+<option value="24">Tamilnadu</option>
+<option value="25">Tripura</option>
+<option value="26">Uttar Pradesh</option>
+<option value="27">Uttaranchal</option>
+<option value="28">West Bengal</option>
+</select>
+</td>
+
+</tr><tr>
+<td align="left" bgcolor="#7B7CB6"><b>COUNTRY</b></td>
+<td><input type="text" name="country">
+</tr>
+
+
+
+
+</table>
+<br>
+<br>
+<center>
+<table border="0">
+<tr>
+<td></td>
+<td>
+  <input type="SUBMIT" value="SUBMIT"></td>
+<td>
+<input type="RESET" value="CLEAR"></td>
+</tr>
+</tr>
+</table>
+</form>
+
+</body>
+</script>
+</html>

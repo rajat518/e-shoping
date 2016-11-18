@@ -1,0 +1,97 @@
+
+
+<html>
+<body bgcolor=#f7f6f9 text=657693>
+<form name="f" method="get" action="./updpro">
+<table align="right">
+<tr>
+<td align="right"><a href="./products"><img src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\swapna\back.gif"  border="0" ></a></td></tr>
+</table>
+
+<table border="1" class="box" cellpadding="1" cellspacing="1" width="90%"  align=center>
+                           <tr>
+                           <td>
+	        <table border="0"  width="100%" cellpadding="3" cellspacing="0" align="center">
+		<tr>
+			<th colspan=2><h1>Product Details </h1></td>
+		</tr>
+		<tr>
+			<td >
+			
+<h4>product id</h4>
+
+			</td>
+			<td >
+			<%=session.getAttribute("pro_id")%>
+			</td>
+		</tr>
+		<tr>
+            <td >
+<h4>image</h4>
+			</td>
+			<td >
+			<%=request.getAttribute("path")%>
+			</td>
+		</tr>
+		<tr>
+            <td >
+<h4>product name</h4>
+			</td>
+			<td >
+			<%=request.getAttribute("pro_name")%>
+			</td>
+		</tr>
+		
+		<tr>
+			<td> 
+<h4>pro_price</h4>
+			</td>
+			<td >
+			<%=request.getAttribute("pro_price")%>
+			</td><td width="40%"> 
+		</tr>
+<tr><td>
+<h4>num_of_items</h4></td>
+			<td >
+			<%=request.getAttribute("num_of_items")%>
+             </td>         
+		</tr>
+	<tr>		<td>
+<h4>branch_id</h4>
+			</td>
+			<td >
+			<%=request.getAttribute("branch_id")%>
+			</td>
+		</tr>
+             <tr>
+			 
+			  
+			  <td>
+<h4>supp_id</h4>
+			</td>
+			<td >
+			<%=request.getAttribute("supp_id")%>
+			</td>
+		</tr>
+		<tr><td>
+<h4>description</h4>
+			</td>
+			<td >
+			<%=request.getAttribute("description")%>
+			</td>
+			
+		</tr>
+			
+</table></table>
+&nbsp;
+&nbsp;
+<table align="center">
+
+<input type="submit" name="submit" value="UPDATE">
+</form>
+</table>
+
+
+<!-- End of regpatient FORM -->
+</body>
+</html>

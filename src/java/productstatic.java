@@ -1,0 +1,101 @@
+
+
+import javax.servlet.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.*;
+import java.text.*;
+import java.sql.*;
+public class productstatic extends HttpServlet
+{
+        Connection con=null;
+	Statement ps=null;	
+	ResultSet rs=null;
+	
+	public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException ,ServletException
+	{
+			res.setContentType("text/html");
+		PrintWriter pw=res.getWriter();
+			HttpSession ses=req.getSession(true);	
+			String s=req.getParameter("t1");
+			String s1=req.getParameter("t2");
+			ses.setAttribute("t1",s);
+			ses.setAttribute("t2",s1);
+
+			pw.print(s);
+ 		try
+		{
+		
+     		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");    	 
+	pw.println("connection");
+
+con=DriverManager.getConnection("jdbc:odbc:project","scott","tiger");
+		
+		pw.println("before prep");
+                ps=con.createStatement();
+		pw.println("after prep");
+		
+			}
+		catch(ClassNotFoundException e)
+		{
+		pw.println("exception"+e);
+		}
+		catch(SQLException e)
+		{
+			pw.println("exception"+e);	
+		}
+	    	try
+	      	{
+				
+	
+				//pw.println("hello"+ses.getAttribute("pro_id"));
+                    
+					int p=0;
+                rs=ps.executeQuery(" select pro_id,path,pro_name,pro_price,num_of_items,branch_id,supp_id,description from products where pro_id='"+s+"' and branch_id='"+s1+"'");
+					
+		while(rs.next())
+			{
+			pw.println("entered while");
+			String pro_id=rs.getString("pro_id");
+			pw.print(pro_id);
+			if(s.equals(pro_id))
+				{
+					
+				ses.setAttribute("pro_id",s);
+                  pw.print(pro_id);
+				req.setAttribute("path",rs.getString("path"));
+				req.setAttribute("pro_name",rs.getString("pro_name"));
+				int pro_price=Integer.parseInt(rs.getString("pro_price"));
+				req.setAttribute("pro_price",pro_price);
+				int num_of_items=Integer.parseInt(rs.getString("num_of_items"));
+				req.setAttribute("num_of_items",num_of_items);
+				req.setAttribute("branch_id",rs.getString("branch_id"));
+				req.setAttribute("supp_id",rs.getString("supp_id"));
+				req.setAttribute("description",rs.getString("description"));
+				//int max=Integer.parseInt(rs.getString("max"));
+				RequestDispatcher rd=req.getRequestDispatcher("prost.jsp");
+				rd.forward(req,res);
+				pw.println("SUCCESSFUL");
+			
+				}
+				  }
+
+			if(p==0)
+				{
+				pw.println("<html><body>");
+	pw.println("<center><br><br><br><br><br><br><h1><b>Login Failed</b></h1>");
+			pw.println("</center></body></html>");
+			pw.close();
+		
+				}
+		
+               
+}	
+
+        	catch(Exception e)
+		{
+		pw.println("can't load driver"+e.getMessage());
+		}
+
+}
+}

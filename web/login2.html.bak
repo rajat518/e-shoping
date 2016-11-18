@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>login</title>
+</head>
+
+
+<body>
+
+ <script language=javascript>
+	function validateForm()
+	{
+	  	  if(f.uname.value=="")  
+      {
+            alert("Please Enter UserID"); 
+            f.uname.focus();
+            return false;  
+      }
+      if(f.pwd.value=="")
+      {
+            alert("please Enter Password");
+            f.pwd.focus();   
+            return false;
+      }  
+      return true;
+	}
+  </script>
+  
+
+<img src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\project\x.jpg">
+<center>
+<table border=0>
+<thead>
+<tr>
+<th><img src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\project\login11.gif">
+
+<form name= f method="get" action="./login2" onsubmit="return validateForm();">
+ &nbsp
+&nbsp
+&nbsp
+
+ADMIN ID:<input type="textbox" name= "uname"  value=""><br><br>
+PASSWORD:<input type="password" name="pwd" value=""><br><br>
+<center>
+<input type="submit" value="Sign In">
+</form>
+</th>
+</tr>
+</thead>
+</table>
+
+</body>
+</html>

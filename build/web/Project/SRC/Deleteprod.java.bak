@@ -1,0 +1,123 @@
+import javax.servlet.*;
+import java.io.*;
+import java.sql.*;
+import java.text.*;
+import javax.servlet.http.*;
+public class Deleteprod extends HttpServlet
+{
+              Connection con=null; 
+              RequestDispatcher rd;
+              Statement s,ps,ps1,ps2=null;
+			  HttpSession ses=null;
+    public void doGet(HttpServletRequest req,HttpServletResponse res)throws ServletException,IOException
+    {
+    PrintWriter pw = res.getWriter();    
+    res.setContentType("text/html");
+    int j=0;
+    try
+    {
+        
+		String id[]=req.getParameterValues("n");
+        String id1[]=req.getParameterValues("pquantity");
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
+         con=DriverManager.getConnection("jdbc:odbc:PROJECT","scott","tiger");
+         s=con.createStatement();
+		 ps=con.createStatement();
+		 ps1=con.createStatement();
+ 		 ps2=con.createStatement();
+		 ResultSet vs,rs1,rs2=null;
+		 String but1=req.getParameter("butt");
+		ses=req.getSession(true);
+		int i=0,k=0;
+
+
+pw.println(""+but1);
+      if(but1.equals("DELETE"))
+	{
+				
+            for( i=0;i<id.length;i++)
+			{ 
+
+				 String qry="delete from cart where cart.pid='"+id[i]+"'";     
+                  s.executeUpdate(qry);
+
+			}			
+		RequestDispatcher rd= req.getRequestDispatcher("./Viewcart");
+		rd.forward(req,res);	
+	}
+	
+
+  else if(but1.equals("UPDATE"))
+		{
+
+		  vs=s.executeQuery("SELECT count(cust_id) from cart where cust_id='"+ses.getAttribute("cust_id")+"'");
+		  vs.next();
+	      k=vs.getInt("count(cust_id)"); 
+			
+		  int id2[]=new int[k];	
+
+		  int l=0,minqty=0;
+		  i=0;
+
+		  
+          ResultSet rs=ps.executeQuery("select distinct cart.pid from product,cart where cart.pid=product.pid;");
+          String s1,cate;		  
+          
+		   while(rs.next())
+          { 
+ 			s1=rs.getString(1);
+			id2[i]=Integer.parseInt(id1[i]);
+            l=id2[i];
+			rs1=ps1.executeQuery("select category from product where pid='"+s1+"'");
+            rs1.next();
+			cate = rs1.getString(1);
+            rs2 = ps2.executeQuery("select minqty from minqty where category='"+cate+"'");
+			rs2.next();
+            minqty=Integer.parseInt(rs2.getString(1));			
+           pw.println("Hello");
+			if(l<minqty)
+             {pw.println("Hello");
+				RequestDispatcher rd= req.getRequestDispatcher("./Viewcart1");
+		        rd.forward(req,res);
+			 }	pw.println("Hello");		
+			String qry="update cart set pr_qty="+l+" where  cust_id='"+ses.getAttribute("cust_id")+"' and pid='"+s1+"'";
+            s.executeUpdate(qry);
+			con.commit();
+			i++;
+		 }pw.println("Hello");
+		 RequestDispatcher rd= req.getRequestDispatcher("./Viewcart");
+		 rd.forward(req,res);
+		}
+		else if(but1.equals("CONTINUESHOPPING"))
+		{
+			pw.println("Hello");
+		 RequestDispatcher rd= req.getRequestDispatcher("glue.jsp");
+         rd.forward(req,res);
+        } 
+		else if(but1.equals("ORDER"))
+		{
+			
+		 RequestDispatcher rd= req.getRequestDispatcher("PAY.jsp");
+         rd.forward(req,res);
+        } 
+	      
+
+		
+        
+    }
+   catch(ClassNotFoundException e)
+		{
+		pw.println("exception"+e);
+		}
+		catch(SQLException e)
+		{
+			pw.println("exception"+e);	
+		}
+		     	catch(Exception e)
+		{
+
+		}
+    
+
+    }
+}

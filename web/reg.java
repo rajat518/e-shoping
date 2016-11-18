@@ -1,0 +1,91 @@
+import javax.servlet.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.*;
+import java.text.*;
+import java.sql.*;
+public class reg extends HttpServlet
+{
+        Connection con=null;
+	PreparedStatement ps=null;	
+	//ResultSet rs=null;
+	HttpSession ses=null;
+	public void doGet(HttpServletRequest request,HttpServletResponse response)throws IOException ,ServletException
+	{
+			response.setContentType("text/html");
+		PrintWriter pw=response.getWriter();
+				
+ 		try
+		{
+		
+     		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");    	 
+	//pw.println("connection");
+
+con=DriverManager.getConnection("jdbc:odbc:project","scott","tiger");
+		
+	//	pw.println("before prep");
+                
+	//	pw.println("after prep");
+	//	ses=req.getSession(true);
+			}
+		catch(ClassNotFoundException e)
+		{
+		pw.println("exception"+e);
+		}
+		catch(SQLException e)
+		{
+			pw.println("exception"+e);	
+		}
+	    	try
+	      	{
+				
+	
+				String s1,ss1,ss2,ss3,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,sans;
+				s1=request.getParameter("name");
+				s2=request.getParameter("userid");
+				s3=request.getParameter("password");
+				s4=request.getParameter("company");
+				s5=request.getParameter("ph_no");
+				int pno=Integer.parseInt(s5);
+				s6=request.getParameter("mob_no");
+				int mno=Integer.parseInt(s6);
+				s7=request.getParameter("add1");
+				s8=request.getParameter("city");
+				s9=request.getParameter("state");
+				s10=request.getParameter("pin");
+				int pn=Integer.parseInt(s10);
+				s11=request.getParameter("country");
+				s12=request.getParameter("secque");
+				sans=request.getParameter("secans");
+				ss1=request.getParameter("mon");
+				ss2=request.getParameter("dd");
+				ss3=request.getParameter("year");
+				 s13=s1+"-"+s1+"-"+s3;
+				String qry="insert into user_details values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+				ps=con.prepareStatement(qry);
+				ps.setString(1,s2);
+				ps.setString(2,s1);
+				ps.setString(3,s4);
+				ps.setInt(4,pno);
+				ps.setInt(5,mno);
+				ps.setString(6,s7);
+				ps.setString(7,s8);
+				ps.setString(8,s9);
+				ps.setString(9,s11);
+				ps.setString(10,s12);
+				ps.setString(11,sans);
+				ps.setString(12,s13);
+				ps.setInt(13,pn);
+				ps.setString(14,s3);
+				int ins=ps.executeUpdate(qry);
+					pw.println(ins);
+				RequestDispatcher rd=request.getRequestDispatcher("register.html");
+				rd.forward(request,response);
+
+                }catch(Exception e)
+		{
+		pw.println("can't load driver"+e.getMessage());
+		}
+
+}
+}

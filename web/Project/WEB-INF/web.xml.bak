@@ -1,0 +1,96 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>pro1</servlet-name>
+        <servlet-class>Loginvalidate</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro1</servlet-name>
+        <url-pattern>/Loginvalidate</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>pro2</servlet-name>
+        <servlet-class>Registervalidate</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro2</servlet-name>
+        <url-pattern>/Registervalidate</url-pattern>
+    </servlet-mapping>
+	<servlet>
+        <servlet-name>pro3</servlet-name>
+        <servlet-class>Addcart</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro3</servlet-name>
+        <url-pattern>/Addcart</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>pro4</servlet-name>
+        <servlet-class>Viewcart</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro4</servlet-name>
+        <url-pattern>/Viewcart</url-pattern>
+    </servlet-mapping>
+	<servlet>
+        <servlet-name>pro5</servlet-name>
+        <servlet-class>Deleteprod</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro5</servlet-name>
+        <url-pattern>/Deleteprod</url-pattern>
+    </servlet-mapping>
+	<servlet>
+        <servlet-name>pro6</servlet-name>
+        <servlet-class>Qty</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro6</servlet-name>
+        <url-pattern>/Qty</url-pattern>
+    </servlet-mapping>
+	<servlet>
+        <servlet-name>pro7</servlet-name>
+        <servlet-class>Checkqty</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro7</servlet-name>
+        <url-pattern>/Checkqty</url-pattern>
+    </servlet-mapping>
+	<servlet>
+        <servlet-name>pro8</servlet-name>
+        <servlet-class>Viewcart1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro8</servlet-name>
+        <url-pattern>/Viewcart1</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>pro9</servlet-name>
+        <servlet-class>Makeorder</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro9</servlet-name>
+        <url-pattern>/Makeorder</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>pro10</servlet-name>
+        <servlet-class>Set</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pro10</servlet-name>
+        <url-pattern>/Set</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

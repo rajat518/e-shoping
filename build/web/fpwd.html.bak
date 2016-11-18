@@ -1,0 +1,102 @@
+<html>
+<head>
+<script language="javascript">
+</script>
+</head>
+<body text="white">
+
+<table border="0" cellspacing="0" cellpadding="0" height="10">
+<tr height="10">
+<td><img src="s.gif" width=300 height=135></td>
+<td background="zz.GIF" width=700 ><img src="zz.GIF" height="10"><font style="monotypecosiva" face="bold" size="8" color="green"></font></img></td>
+</tr>
+</table>
+
+<div align="right">
+<table  cellspacing=0 cellpadding=0 border=0>
+<tr><td>
+</td>
+<td align="right"><a href="home.html"><img src="homepage.gif"  border="0" ></a></td>
+</tr>
+</table>
+</div>
+
+
+<center><table cellspacing=0 cellpadding=0 border="0" width="400">
+<tr bgcolor="lightblue">
+<td valign="top"><center><font color="red" size="5">Sign IN Problem</font></center>
+</td>
+</tr>
+<tr><td align="justify"> <font color="black">hjgfdh hfuiew hfewh fhuiew fhbreb fherui fhber rehf erfh efh
+uierhfuib fhwe hrf ejhrfie efew ewhf ewbfe ferhfbefbew efh verhferfg efvb
+jgf egrfv egrf ewgbrfu.hjgfdh hfuiew hfewh fhuiew fhbreb fherui fhber rehf erfh efh
+uierhfuib fhwe hrf ejhrfie efew ewhf ewbfe ferhfbefbew efh verhferfg efvb</font></td></tr>
+<tr bgcolor="lightblue"><td><center><font color="red" size="5">Confirm Your Identity</font></center></td></tr>
+<tr><td align="justify"> <font color="black">hjgfdh hfuiew hfewh fhuiew fhbreb fherui fhber rehf erfh efh
+uierhfuib fhwe hrf ejhrfie efew ewhf ewbfe ferhfbefbew efh verhferfg efvb
+jgf egrfv egrf ewgbrfu.hjgfdh hfuiew hfewh fhuiew fhbreb fherui fhber rehf erfh efh
+uierhfuib fhwe hrf ejhrfie efew ewhf ewbfe ferhfbefbew efh verhferfg efvb</font></td></tr>
+</table></center>
+
+
+
+ 
+
+
+<form name="f1" action="./check" method="post">
+<table align=CENTER>
+
+<td bgcolor="#7B7CB6"><b>USER ID</b>
+ <td><input type="textbox" maxlength="10" name="user_id"><font color="black">(max.of 10 characters)</td>
+</tr>
+
+
+
+<td align="left" bgcolor="#7B7CB6" ><font color="white"><b>
+SELECT YOUR QUESTION</b></font>
+</td>
+<td><select name="secque">
+<option value="1">WHAT IS UR PET NAME? </option>
+<option value="2">WHAT IS UR FATHER NAME? </option>
+<option value="3">WHO IS UR ROLE MODEL ? </option>
+<option value="4">WHAT IS UR FAVOURITE CHILD HERO? </option><option value="5">WHAT IS UR FAVOURITE COLOR? </option>
+<option value="WHAT IS UR FAVOURITE PLAYER? ">WHAT IS UR FAVOURITE PLAYER? </option>
+<option value="my school?">my school?</option>
+<option value="8">my bike </option>
+</select>
+</tr>
+<tr><td align="left" bgcolor="#7B7CB6"><font color="white"><b>YOUR ANWSER</b></font></td>
+<td><input type="textbox" name="secans"></td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><font color="white"><b>WHEN IS UR BIRTHDAY(mon/dd/year)</b><font></td>
+<td>
+<input type="text" name="mon" maxlength="4">
+<input type="text" name="dd" maxlength="4">
+<input type="text" name="year" maxlength="4"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7B7CB6">Terms & Conditions</td>
+
+
+</tr>
+</table>
+<br>
+<br>
+<center>
+<table border="0">
+<tr>
+<td></td>
+<td>
+  <input type="SUBMIT" value="SUBMIT"></td>
+<td>
+<input type="RESET" value="CLEAR"></td>
+</tr>
+</tr>
+</table>
+</form>
+
+</body>
+</script>
+</html>

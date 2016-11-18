@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>login</title>
+</head>
+
+
+<body>
+
+ <script language=javascript>
+	function validateForm()
+	{
+	  	  if(f.uname.value=="")  
+      {
+            alert("Please Enter UserID"); 
+            f.uname.focus();
+            return false;  
+      }
+      if(f.pwd.value=="")
+      {
+            alert("please Enter Password");
+            f.pwd.focus();   
+            return false;
+      }  
+      return true;
+	}
+  </script>
+  
+
+<img src="x.jpg">
+<center>
+<table border=0>
+<thead>
+<tr>
+<th><img src="login11.GIF">
+
+<form name= f method="get" action="./login" onsubmit="return validateForm();">
+ &nbsp
+&nbsp
+&nbsp
+
+ADMIN ID:<input type="textbox" name= "uname"  value=""><br><br>
+PASSWORD&nbsp;&nbsp;&nbsp;:<input type="password" name="pwd" value=""><br><br>
+<center>
+<input type="submit" value="Sign In"><br/>
+<a href="fpwd.html">Forgot your password</a><br/><br/>
+<img src="orange_arrow.gif" border="0" width="14" height="14">&nbsp;Dont have an ID<a href="#">Sign Up</a>
+</form>
+</th>
+</tr>
+</thead>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+
+import java.lang.*;
+import javax.servlet.*;
+import java.io.*;
+import javax.servlet.http.*;
+import java.util.*;
+import java.text.*;
+import java.sql.*;
+public class salarydetails extends HttpServlet
+{
+        Connection con=null;
+	Statement ps=null;	
+	ResultSet rs=null;
+	RequestDispatcher rd;
+	
+	public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException
+	{
+			res.setContentType("text/html");
+		PrintWriter pw=res.getWriter();
+	
+ 		try
+		{
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
+       
+	    con=DriverManager.getConnection("jdbc:odbc:project","scott","tiger");		
+		
+		 pw.println("<html>");
+          
+            pw.println("<body>");
+			pw.println("<table border=0 cellspacing=0 cellpadding=0><tr>");
+			pw.println("<td><img src='acc.gif' width=972 height=155></td></tr>");
+			
+          
+                
+				 
+           pw.println("<p><table cellpadding=1 cellspacing=1 border=1><th >EMPLOYEE ID</th><th>EMPLOYEE NAME</th><th>DESIGNATION</th><th>BRANCH ID</th><th>SALARY</th></tr>");
+		int i=1;
+		 //HttpSession ses=req.getSession(true);
+                ps=con.createStatement();
+		
+
+
+
+
+            
+	           int p=0;
+              
+rs=ps.executeQuery("select emp_no,ename,desg,branchid,salary  from emp_Details");
+
+		while(rs.next())
+				{
+			String emp_no=rs.getString("emp_no");
+			//pw.print(emp_no);
+			 String ename=rs.getString("ename");
+			// pw.print(ename);
+				String desg=rs.getString("desg"); 
+			//	pw.print(desg);
+				String branchid=rs.getString("branchid");
+			//	pw.print(branchid);
+				String salary=rs.getString("salary");
+		//	pw.print(salary);
+	//rs.executeQuery("select sum(salary) from emp_details");
+	
+  pw.println("<tr bgcolor=white><td>"+emp_no+"</td><td>"+ename+"</td><td>"+desg+"</td><td>"+branchid+"</td><td>"+salary+"</td></tr>");
+                       
+		   i++;
+					   
+				 
+				}
+				pw.print("</table>");
+				 pw.println("<br><br>");
+				 pw.println("<table>");
+				 pw.println("<tr>");
+           
+	   pw.print("<td><td><td>");
+	   pw.println("<form name='f2' action='./supord' method='post'");
+	   pw.println("<td><input type='submit' name='submit' value='supplier orders'>");
+	   pw.println("</form>");
+	   
+	   pw.print("<td><td><td>");
+	    pw.println("<form name='f4' action='./cusord' method='get'");
+	   pw.println("<td><input type='submit' name='submit' value='customerorders'>");
+	   pw.println("</form>");
+ pw.print("<td><td><td>");
+		 
+			
+			pw.println("</tr></table>");
+			pw.print("</body></html>");		   
+			
+						
+		
+			
+               
+			rs.close();
+		
+        ps.close();
+		con.close();
+   
+		}
+		catch(ClassNotFoundException e)
+		{
+		pw.println("exception"+e);
+		}
+		catch(SQLException e)
+		{
+			pw.println("exception"+e);	
+		}
+		     	catch(Exception e)
+		{
+		pw.println("can't load driver"+e.getMessage());
+		}
+  }
+}
+			

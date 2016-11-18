@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>HOME</title>
+</head>
+<body bgcolor="#A6A6B3" text="#000000"
+      onload="Preloader()"
+     topmargin="0">
+<!-- start of page table -->
+<center>
+<table bgcolor="#FFFFFF" width="800" height="100%" border="0"
+cellspacing="0" cellpadding="0"><tr><td valign="top"><table class="matte"
+width="100%" height="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+<td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!-- start of banner row -->
+<tr>
+<!-- start of corner cells -->
+<td width="194" height="135" valign="middle" bgcolor="#7B7CB6" class="corner"><img src="corner.gif" width="194" height="135" alt=""></td>
+<!-- end of corner cells -->
+<!-- start of banner -->
+<td height="135" valign="top" background="s00.GIF" bgcolor="#7B7CB6" class="banner"><a href="/"><img src="s00.GIF" width="341" height="135"
+border="0" ></a></td><!-- end of banner -->
+<td height="135" valign="top" background="y.gif" bgcolor="#7B7CB6" class="banner"><a href="/"><img src="y.GIF" width="441" height="135"
+border="0" ></a></td><!-- end of banner -->
+</tr><!-- end of banner row -->
+<tr><!-- start of sidebar/body row -->
+<!-- start of sidebar cells -->
+<td width="194" background="left_bg.gif" bgcolor="#7B7CB6" valign="top" class="sidebar">
+<!-- start of sidebar table -->
+
+<!-- start of sidebar table -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td onmouseover="document.images.x100.src='layout1.gif'"
+onmouseout="document.images.x100.src='layout11.gif'"><a href="aboutus.html"><img 
+src="layout1.gif" name="x100" height="50" width="194" border="0"></a></td></tr>
+
+<tr><td
+onmouseover="document.images.x289.src='layout22.gif'"
+onmouseout="document.images.x289.src='layout2.gif'"><img
+src="layout2.gif" name="x289" height="35" width="194" border="0" ></td></tr>
+<tr><td
+onmouseover="document.images.x369.src='layout3.gif'"
+onmouseout="document.images.x369.src='layout33.gif'"><a href="admin.html"><img
+src="layout3.gif" name="x369" height="35" width="194" border="0" ></a></td></tr>
+<tr><td
+onmouseover="document.images.x449.src='layout4.gif'"
+onmouseout="document.images.x449.src='layout44.gif'"><a href="login.html"><img
+src="layout4.gif" name="x449" height="35" width="194" border="0" ></a></td></tr>
+<tr><td
+onmouseover="document.images.x529.src='layout5.gif'"
+onmouseout="document.images.x529.src='layout55.gif'"><a href="register.html"><img
+src="layout5.gif" name="x529" height="35" width="194" border="0"></a></td></tr>
+<tr><td
+onmouseover="document.images.x609.src='layout6.gif'"
+onmouseout="document.images.x609.src='layout66.gif'"><a href="help2.html"><img
+src="layout6.gif" name="x609" height="35" width="194" border="0" ></a></td></tr>
+</table><!-- end of sidebar table -->
+<td align="justify" width="300"><font face="Monotype corsiva" size=5 color="blue"><center>Wide Selection of Stationary</center></font><br/>Our Stationary sales jghe gj4rk5th jyhkrtj tjhjtr5h thntr yrt5 hjjtrk hgtrjhy thjtr jnhtr trhntrlk nhkt jktngh kj nthtr tnhtlrk nthgltrk jtnhgkltr tnhkltr thg jktnhlrk trhntr tmrnhl try.<br/><font face="Monotype corsiva" size=5 color="blue"><center>Shipment Freel</center></font><br/>Our Stationary sales jghe gj4rk5th jyhkrtj tjhjtr5h thntr yrt5 hjjtrk hgtrjhy thjtr jnhtr trhntrlk nhkt jktngh kj nthtr tnhtlrk nthgltrk jtnhgkltr tnhkltr thg jktnhlrk</td><td><img src="xx.jpg"></img></td>
+</td>
+
+<!-- end of sidebar cell -->
+<!-- start of body cell -->
+
+</td>
+<!-- end of body cell -->
+</tr><!-- end of sidebar/body row -->
+</table><br/>
+<img src="p.jpg" width="90" height="100"></img><img src="notepads9.jpg"></img><img src="letterheadpaper.jpg" width="90" height="100"></img><img src="Rubber stamps.jpg"></img><img src="self sealed.jpg"></img><img src="liquidpaper2.jpg"></img><img src="glue1.jpg"></img></td></tr></table></td></tr></table>
+<!-- end of page table -->
+<script>
+<!--
+function Preloader()
+{
+  var x100=new Image();
+x100.src="layout11.gif";
+  var x289 = new Image();
+x289.src = "layout22.gif";
+  var x369 = new Image();
+x369.src = "layout33.gif";
+  var x449 = new Image();
+x449.src = "layout44.gif";
+  var x529 = new Image();
+x529.src = "layout55.gif";
+  var x609 = new Image();
+x609.src = "layout66.gif";
+}
+//-->
+</script>
+<table>
+</body></html>

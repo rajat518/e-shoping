@@ -1,0 +1,272 @@
+<html>
+<head>
+<script language="javascript">
+</script>
+</head>
+<body text="white">
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="s.gif" width=300 height=135></td>
+<td background="pp.GIF" width=700></td>
+</tr>
+</table>
+
+<div align="right">
+<table  cellspacing=0 cellpadding=0 border=0>
+<tr><td>
+</td>
+<td align="right"><a href=""><b>Help????????</b></a><a href="home.html"><img src="homepage.gif"  border="0" ></a></td>
+</tr>
+</table>
+</div>
+
+
+<table cellspacing=0 cellpadding=0 border="0">
+<tr>
+<td valign="top"><img src="orange_arrow.gif" border="0" width="14" height="14">&nbsp;
+<strong><font color="black">Already have an ID ?</font><a href="login.html">Login</a></strong>
+</td>
+</tr>
+</table>
+
+
+
+ 
+
+
+<form name="f1" action="reg" method="post">
+<table align=CENTER>
+<tr>
+<td bgcolor="#7B7CB6"><b>NAME</b> 
+ <td><input type="textbox" maxlength="10" name="name"><font color="black">(max.of 10 characters)</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>USER ID</b>
+ <td><input type="textbox" maxlength="10" name="user_id"><font color="black">(max.of 10 characters)</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6">
+<b>PASSWORD</b></td>
+<td> 
+<input type="password" maxlength="6" name="password"><font color="black">(max.of 6 characters)</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6">
+<b>RETYPE-PASSWORD</b></td>
+<td> 
+<input type="password" maxlength="6" name="t2"></td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>COMPANY NAME</b>
+ <td><input type="textbox" name="company"></td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>PHONE NO</b>
+ <td><input type="textbox" name="ph_no"></td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>MOBILE NO</b>
+ <td><input type="textbox" maxlength="10" name="mob_no"></td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>ADDRESS</b>
+ <td>
+<TEXTAREA name="add"> </TEXTAREA>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#7B7CB6"><b>CITY</b></td>
+<td><select name="city"  id="loc">  
+<option value="1">Agra</option>
+<option value="2">Ahmedabad </option>
+<option value="3">Allahabad</option>
+<option value="4">Amritsar</option>
+<option value="5">Banglore</option>
+<option value="6">Bhopal</option>
+<option value="7">Chandigarh</option>
+<option value="8">Chennai</option>
+<option value="9">Cochin</option>
+<option value="10">Coimbatore</option>
+<option value="11">Dehradoon</option>
+<option value="12">Gandhinagar</option>
+<option value="13" selected>Hyderabad</option>
+<option value="14">Indore</option>
+
+<option value="15">Jammu</option>
+<option value="16">Jaipur</option>
+<option value="17">Jodhpur</option>
+<option value="18">Kanchipuram</option>
+<option value="19">Kashmir</option>
+<option value="20">Lucknow</option>
+<option value="21">Madurai</option>
+
+<option value="22">Mumbai</option>
+<option value="23">Mysore</option>
+
+<option value="24">Ooty</option>
+<option value="25">Pune</option>
+<option value="26">Pondicherry</option>
+
+<option value="27">Srinagar</option>
+<option value="28">Trivandrum</option>
+<option value="29">Tirupati</option>
+<option value="30">Varanasi</option>
+<option value="31">Vijayawada</option>
+<option value="32">Vishakapatnam</option>
+<option value="33">Warangal</option>
+</select>
+</td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><b>STATE</b></td>
+<td><select name="state" onchange="javascript:reloadTos(reloadTimeZones)" id="loc">  
+<option value="1">Andhra Pradesh </option>
+<option value="2">Arunachal Pradesh</option>
+<option value="3">Assam</option>
+<option value="4">Bihar</option>
+<option value="5">Chattisgarh</option>
+<option value="6">Delhi</option>
+<option value="7">Goa</option>
+<option value="8">Gujarat</option>
+<option value="9">Haryana</option>
+<option value="10">Himachal Pradesh</option>
+<option value="11">Jammu & Kashmir</option>
+<option value="12">Jharkhand</option>
+<option value="13">Karnataka</option>
+<option value="k2">Kerala</option>
+<option value="14">Madhya Pradesh</option>
+<option value="15">Maharashtra</option>
+<option value="16">Manipur</option>
+<option value="17">Meghalaya</option>
+<option value="18">Mizoram</option>
+<option value="19">Nagaland</option>
+<option value="20">Orissa</option>
+<option value="21">Punjab</option>
+<option value="22">Rajasthan</option>
+<option value="23">Sikkim</option>
+<option value="24">Tamilnadu</option>
+<option value="25">Tripura</option>
+<option value="26">Uttar Pradesh</option>
+<option value="27">Uttaranchal</option>
+<option value="28">West Bengal</option>
+</select>
+</td>
+<tr>
+<td align="left" bgcolor="#7B7CB6"><B>PINCODE</B>
+</td>
+<td><input type="text" name="pin"></td>
+</tr>
+</tr><tr>
+<td align="left" bgcolor="#7B7CB6"><b>COUNTRY</b></td>
+<td><input type="text" name="country">
+</tr>
+<tr>
+<td align="left" bgcolor="#7B7CB6" ><font color="white"><b>
+SELECT YOUR QUESTION</b></font>
+</td>
+<td><select name="secque">
+<option value="1">WHAT IS UR PET NAME? </option>
+<option value="2">WHAT IS UR FATHER NAME? </option>
+<option value="3">WHO IS UR ROLE MODEL ? </option>
+<option value="4">WHAT IS UR FAVOURITE CHILD HERO? </option><option value="5">WHAT IS UR FAVOURITE COLOR? </option>
+<option value="WHAT IS UR FAVOURITE PLAYER? ">WHAT IS UR FAVOURITE PLAYER? </option>
+<option value="my school?">my school?</option>
+<option value="8">my bike </option>
+</select>
+</tr>
+<tr><td align="left" bgcolor="#7B7CB6"><font color="white"><b>YOUR ANWSER</b></font></td>
+<td><input type="textbox" name="secans"></td>
+</tr>
+<tr>
+<td bgcolor="#7B7CB6"><font color="white"><b>WHEN IS UR BIRTHDAY(mon/dd/year)</b><font></td>
+<td>
+<input type="text" name="mon" maxlength="4">
+<input type="text" name="dd" maxlength="4">
+<input type="text" name="year" maxlength="4"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7B7CB6">Terms & Conditions</td>
+
+<td align="left" width="400"><textarea cols="50" rows="4" wrap="physical" readonly title="Terms of Service">
+ACCEPTANCE OT THE TERMS AND CONDITIONS
+
+ This is an Important Legal Part of this site.Please go through it very carefully.
+It consist of three parts mainly:
+ 1.Disclaimer.
+ 2.Privacy Agreement.
+ 3.Surfing Or User Agreement.
+ 
+1. Disclaimer
+ StationaryMart.com is an internet site of Information and Products display of the Stationary Mart. The Products and Information to be included in StationaryMart.com is made by the Management of Stationary Mart, Mumbai, India, As Stationary Mart makes the products displayed on site . It is presumed that we are not violating any copyrights. There is no intention to violate intellectual copyright. However, if any Agency has any objection, the same may be brought immediately to the notice of Stationary Mart. We will ensure immediate Legal opinion on explicit observation/ complaint and take immediate steps to legalize it, if required. StationaryMart.com is not expected to offend anyone. However if any products or information offends any surfer we at StationaryMart.com take no responsibility concerning the impact or consequence of the same. While we have made every effort to ensure the accuracy and clarity of the information presented in this site, Stationary Mart or StationaryMart.com cannot be held liable for any errors or inconsistencies. All information in this site is subject to Stationary Mart's discretion and is liable to change without any notice.
+
+2. Privacy Agreement 
+
+ General Privacy Policy Statement
+     Stationary Mart recognizes its obligation to its customers, community and online visitors to adhere to the highest standards of decency, fairness, and integrity in all its operations. Likewise, StationaryMart.com is dedicated to the fundamentals of protecting consumer privacy on the Internet, especially for children. We've developed our privacy practices from guidelines established by the Children's Advertising Review Unit (CARU) and in compliance with the requirements established by the Children’s Online Privacy Protection Act ("COPPA").
+  
+  Gathering and Use of Information
+     On most sections of our websites, StationaryMart.com collects personal information from our visitors only on a voluntary basis. We do not require this information for customers to obtain access to any of our sites. However, in order to participate in some of the programs offered on the StationaryMart.com website, you may have to provide personal information. Personal information received from any visitor will only be used for internal marketing purposes and will not be sold or provided to third parties.
+  
+   Cookies
+     StationaryMart.com may use "cookie" technology to obtain non-personal information from its online visitors. Cookies are information files that your web browser places on your computer when you visit a website. Most browsers accept cookies automatically, but can be configured not to accept them or to indicate when a cookie is being sent. We do not extract personal information in this process nor do we provide this information to third parties. We also do not contact you except in case of enquiry. Cookies allow us to customize your user interface to speed up the navigation process and to make the site experience more efficient. If your browser is configured to reject cookies, you will not be able to utilize the features of the StationaryMart.com website.
+
+   USE OF IP ADDRESSES 
+     An IP address is a number that's automatically assigned to your computer whenever you're surfing the Web. Web servers -- the big computers that "serve up" Web pages -- automatically identify your computer by its IP address.StationaryMart.com collect IP addresses for the purposes of system administration, to report aggregate information to our advertisers, and to audit the use of our site. When Guests request pages from StationaryMart.com site, our servers log the Guests' IP addresses. We do not normally link IP addresses to anything personally identifiable, which means that a user's session will be logged, but the user remains anonymous to us. We can and will use IP addresses to identify a user when we feel it is necessary to enforce compliance with our house rules or terms of service or to protect our service, site, customers, or others.
+
+   Links 
+     The StationaryMart.com website may contain links to other sites. We make every effort only to link to websites that share our high standards of decency, fairness, and integrity. We try our best to ensure that these links are safe for children, but the privacy and data collection practices on any linked websites are entirely separate from StationaryMart.com and are not covered by this Privacy Policy. StationaryMart.com shall not be responsible for any failure on the part of any linked websites to comply with any privacy policy posted on this website, or any contractual or other legal obligations to which the operators of such website may be subject. In addition, other websites, which may contain material not suitable for children, may also link to the StationaryMart.com website without StationaryMart.com’s knowledge or consent. StationaryMart.com has no responsibility for the content, policies or actions of these websites. Children should always check with a parent, guardian or other adult before linking to any new sites.
+
+   Security 
+     StationaryMart.com has taken steps to make all information received from our online visitors as secure as possible against unAuthorized access and use. StationaryMart.com retains paper copies of faxed or mailed forms in a secure cabinet. All other personal information provided by customers is kept in StationaryMart.com's secure database. All information received from our customers is protected by our security measures, which are periodically reviewed. You should keep in mind, however, that no data transmission over the Internet is 100% secure and any information disclosed online can potentially be collected and used by parties other than the intended recipient.
+
+   Changes and Updates to the Privacy Policy 
+     The StationaryMart.com websites’ content and features may be updated, revised, modified and supplemented. StationaryMart.com reserves the right to change the information, features, products, policies, promotions, disclosures and disclaimers at any time. Changes to this Privacy Policy will be posted on our websites. Please check the policy periodically for changes. At the end of the policy we indicate the date of an update to the Privacy Policy. The continued use of the StationaryMart.com websites following the posting of changes to this Privacy Policy will mean you accept those changes. 
+
+   Changes and Access to Personal Information 
+     StationaryMart.com customers who provide personal information to StationaryMart.com can correct, update and delete personal information from our database at any time by sending an e-mail to StationaryMart.com by clicking on the hyperlink "Enquiries" located at the bottom of each page of the StationaryMart.com websites or contacting StationaryMart.com's Consumer Affairs Department addressed below.
+
+   Summary 
+     As in our other business operations, StationaryMart.com approaches our communications on the Internet with respect for, and commitment to, individual privacy rights, concern, and respect for the different sensibilities of our consumers. We support active self-regulation of this new environment to ensure that responsible marketers can maintain the right to use all communication media to interact with its consumers.
+
+
+3. Surfing or User Agreement ANY PERSON ACCESSING THE StationaryMart.COM WEB SITE AGREES TO AND IS BOUND BY THE FOLLOWING TERMS AND CONDITIONS:
+    1.	Copyright. All images, text, programs, and other materials found in the StationaryMart.com Web Site are protected by the copyright laws. Any commercial use of the images, text, programs or other materials found in the StationaryMart.com Web Site is strictly prohibited, without the express written consent of StationaryMart.com.
+    2.	Trademarks. The names, logos, and taglines identifying StationaryMart.com's products and services particularly the Trade Mark "Mitsu" are proprietary marks of Mitsu Stationery, Bombay, India or its subsidiaries. Microsoft and its products and services referenced herein are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. All other trademarks and service marks if displayed are the property of their respective owners. 
+    3.  Content Submission. Certain areas of the StationaryMart.com Web Site allow for the exchange of information between you, the USER, and StationaryMart.com. Any submission by the USER becomes the property of StationaryMart.com, and the USER implicitly grants Stationary Mart the Authority and right to use that content in accordance with StationaryMart.com corporate privacy policies. 
+    4.	USER Responsibility. The USER assumes all responsibility for use of the StationaryMart.com Web Site. The USER waives all claims against StationaryMart.com or Parent company Mitsu Stationery, its officers, directors, employees, suppliers, designers and programmers that may arise from the utilization of the StationaryMart.com Web Site.
+    5.	Accuracy of Information. While all reasonable attempts are made to ensure the accuracy of the information, neither StationaryMart.com, nor its information contributors can be held responsible by USER for the accuracy of the information found in the StationaryMart.com Web Site. StationaryMart.com makes no expressed or implied warranty as to the accuracy or merchantability of content or programming.
+
+
+          Your Acceptance Of All These Terms
+
+By using this site, you signify your assent to the StationaryMart.com's Privacy Policy and all other agreements.
+If you do not agree to this policy, please do not use our sites. 
+Your continued use of the StationaryMart.com sites following the posting of changes to these terms will mean you accept those changes.
+
+
+
+
+</textarea></td>
+</tr>
+</table>
+<br>
+<br>
+<center>
+<table border="0">
+<tr>
+<td></td>
+<td>
+  <input type="SUBMIT" value="SUBMIT"></td>
+<td>
+<input type="RESET" value="CLEAR"></td>
+</tr>
+</tr>
+</table>
+</form>
+
+</body>
+</script>
+</html>

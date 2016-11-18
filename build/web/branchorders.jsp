@@ -1,0 +1,115 @@
+
+<html>
+<head>
+<title>Branch</title>
+
+<body>
+<table>
+<td background="ab.JPG" width=970 height=135></td>
+</table>
+<table align="right">               
+
+<a href="pro.html"><img src="back.gif" border=0></a>                                 
+</table>
+
+<center><font size =6 color=blue><strong>Customer Orders</strong></font></center>
+<br><br>
+<center><font size=5>WELCOME</font><font size=5 color=red> &nbsp; <%=session.getAttribute("branch_id")%></font></center>
+
+
+
+
+<%@ page language="java" import="java.sql.*" %>
+<%
+String driver = "sun.jdbc.odbc.JdbcOdbcDriver";
+Class.forName(driver).newInstance();
+Connection con=null;
+Statement ps=null;
+ResultSet rs=null;
+
+con=DriverManager.getConnection("jdbc:odbc:project","scott","tiger");
+ps=con.createStatement();
+int p=0,quantity=0,ord_price=0;
+
+
+String orderid="",ord_add="",ord_city="",ord_state="",ord_pincode="",ord_date="",ord_time="",ord_status="";
+%>
+<%
+
+
+	rs=ps.executeQuery("select * from orders where ord_status='processsed' or ord_status='Shipped' or ord_status='Delivered' or ord_status='Cancelled'");
+%>
+
+
+
+<br>
+<table width="770" border="1">
+
+<tr>
+<td>S.no  </td><td>OrderId </td>
+<td>Address</td>
+<td>City</td>
+<td>State</td>
+<td>Pincode</td>
+<td>Date</td>
+<td>Time</td>
+<td>Status</td>
+<td>Set status
+<td></td>
+<td>Price</td>
+</tr>
+
+
+
+<%
+while(rs.next())
+{
+	          p++;
+	           orderid=rs.getString("orderid");
+			   ord_add=rs.getString("ord_add");
+			   ord_city=rs.getString("ord_city");
+			   ord_state=rs.getString("ord_state");
+			  ord_pincode=rs.getString("ord_pincode");
+			  ord_date=rs.getString("ord_date");
+			  ord_time=rs.getString("ord_time");
+			  ord_status=rs.getString("ord_status");
+			  ord_price=Integer.parseInt(rs.getString("ord_price"));	
+				
+%>
+<form action="./Set1" method="post">
+<input type="hidden" name="oid" value=<%=orderid%>></input>
+
+
+<tr>
+
+<td><%=p%></td>
+<td><a href="products.jsp?orid=<%=orderid%>"><%=orderid%></a></td>
+<td><%=ord_add%></td>
+<td><%=ord_city%></td>
+<td><%=ord_state%></td>
+<td><%=ord_pincode%></td>
+<td><%=ord_date%></td>
+<td><%=ord_time%></td>
+<td><%=ord_status%></td>
+<td><select name="status" ID="statusid">
+<option value="select" selected="selected">order status</option> 
+<option value="Shipped">Shipped</option>
+<option value="Delivered">delivered</option> 
+<option value="Cancelled">Cancelled</option></select></td>
+<td><input type="submit" name="setstatus" value="Update"></input></td>
+
+<td><%=ord_price%></td>
+</tr>
+</form>
+
+<%}
+%>
+</table>
+
+
+</body>
+</html>
+
+
+
+

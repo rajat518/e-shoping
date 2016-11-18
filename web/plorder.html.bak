@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="javascript">
+</script>
+</head>
+<body text="white">
+
+<table border="0" cellspacing="0" cellpadding="0" height="10">
+<tr height="10">
+<td><img src="s.gif" width=300 height=135></td>
+<td background="yy.GIF" width=700 ><b><font size="5" color="green"></font></b><img src="yy.GIF" height="10"><font style="monotypecosiva" face="bold" size="12" color="green"></font></img></td>
+</tr>
+</table>
+<a href="#"><img src="back.gif"></img></a><br/>
+<font color="blue" size="8" style="monotypecosiva">WEL COME</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br/><br/><br/><br/>
+<br/>
+
+<table><tr><td><img src="pen1.jpg"></img></td>
+<td><img src="p.jpg" width="120" height="100"></img></td><td><img src="p18.jpg" width="100" height="100"></img></td></tr><tr><td><font color="black">Product ID:P001<br/>Name:Fountain pen<br/>Unit pric e:50<br/><br/><img src="smallbutton.jpg"></img></td><td><font color="black">Product ID:P002<br/>Name:Ball pen<br/>Unit pric e:40<br/><br/><img src="smallbutton.jpg"></img></td><td><font color="black">Product ID:P001<br/>Name:Mark pen<br/>Unit pric e:55<br/><br/><img src="smallbutton.jpg"></img></td></tr></table><br/>
+<a href="#">Click This TO View</a>
+</body>
+</script>
+</html>

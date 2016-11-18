@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<table width="900" border="0">
+  <tbody>
+    <tr>
+      <td><img height="140" src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\swapna\s0.gif" width="970"></td>
+    </tr>
+  </tbody>
+</table>
+
+<table align="center">
+  <tbody>
+    <tr>
+      <td><img src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\swapna\map1.gif" width="406" height="433"> <font style="position: absolute; left: 449; top: 292; width: 9; height: 19">
+	  <a href=""><img src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\swapna\reddot.gif" border=0></a></font>
+      <font style="position: absolute; left: 375; top: 415; width: 9; height: 19"><a href=""><img src="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\swapna\reddot.gif" border=0></a></font>
+      <font style="position: absolute; left: 580; top: 390; width: 9; height: 19"><a href=""><img src="reddot.gif" border=0></a></font>
+      <font style="position: absolute; left: 475; top: 455; width: 9; height: 19"><a href="./branch1products"><img src="reddot.gif" border=0></a></font>
+      <font style="position: absolute; left: 418; top: 575; width: 9; height: 19"><a href="./bran2"><img src="reddot.gif" border=0></a></font>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+
+</html>
